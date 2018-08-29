@@ -7,7 +7,16 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.ronyo.learnspring.annotations" />
+    <!-- add entry to enable component scanning -->
 
+    <bean id="myFortune"
+          class="com.ronyo.learnspring.xml.HappyFortuneService">
+    </bean>
+    <bean id="myCoach"
+          class="com.ronyo.learnspring.xml.TrackCoach"
+          init-method="doMyStartupStuff"
+          destroy-method="doMyCleanupStuff">
+        <constructor-arg ref="myFortune"/>
+    </bean>
 
 </beans>

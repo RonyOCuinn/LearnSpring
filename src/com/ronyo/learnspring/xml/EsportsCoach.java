@@ -1,4 +1,4 @@
-package com.ronyo.learnspring;
+package com.ronyo.learnspring.xml;
 
 public class EsportsCoach implements Coach {
     @Override

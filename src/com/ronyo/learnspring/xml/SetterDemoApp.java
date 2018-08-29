@@ -1,4 +1,4 @@
-package com.ronyo.learnspring;
+package com.ronyo.learnspring.xml;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

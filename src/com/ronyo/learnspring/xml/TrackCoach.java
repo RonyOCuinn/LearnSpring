@@ -1,4 +1,4 @@
-package com.ronyo.learnspring;
+package com.ronyo.learnspring.xml;
 
 public class TrackCoach implements Coach {
 
@@ -19,5 +19,13 @@ public class TrackCoach implements Coach {
     @Override
     public String getDailyFortune() {
         return "Just do it: " + fortuneService.getFortune();
+    }
+
+    private void doMyStartupStuff() {
+        System.out.println("TrackCoach: inside method doMyStartupStuff");
+    }
+
+    private void doMyCleanupStuff() {
+        System.out.println("TrackCoach: inside method doMyCleanupStuff");
     }
 }
